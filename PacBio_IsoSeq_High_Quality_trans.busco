@@ -1,0 +1,15 @@
+# BUSCO version is: 3.1.0 
+# The lineage dataset is: metazoa_odb10 (Creation date: 2021-02-17, number of species: 65, number of BUSCOs: 954)
+# To reproduce this run: python /g/data/u86/software/busco/scripts/run_BUSCO.py -i High-Quality_Isoforms.fasta -o Isoseq_DNA_busco -l /g/data/u86/software/busco/lineages/metazoa_odb10/ -m transcriptome -c 28 -t /g/data/u86/mxf221/hookworm/
+#
+# Summarized benchmarking in BUSCO notation for file High-Quality_Isoforms.fasta
+# BUSCO was run in mode: transcriptome
+
+	C:72.3%[S:22.9%,D:49.4%],F:6.6%,M:21.1%,n:954
+
+	689	Complete BUSCOs (C)
+	218	Complete and single-copy BUSCOs (S)
+	471	Complete and duplicated BUSCOs (D)
+	63	Fragmented BUSCOs (F)
+	202	Missing BUSCOs (M)
+	954	Total BUSCO groups searched
