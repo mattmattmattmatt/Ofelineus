@@ -26,7 +26,8 @@ TransDecoder.Predict -t Wormbase_Isoseq_merged_cdhit.fasta --single_best_only
 cp Wormbase_Isoseq_merged_cdhit.fasta.transdecoder_dir/longest_orfs.pep PacBio_Wormbase_Isoforms_merged.pep
 
 #Lastly remove duplicates from peptide file
-cdhit -i PacBio_Wormbase_Isoforms_merged.pep PacBio_Wormbase_Isoforms_merged_cdhit.pep  #Contains 27154 sequences
+cdhit -c 0.9 -i PacBio_Wormbase_Isoforms_merged.pep PacBio_Wormbase_Isoforms_merged_cdhit_default.pep  #Use default cluster value 90%; Contains 27134 sequences
+cdhit -c 1.0 -i PacBio_Wormbase_Isoforms_merged.pep PacBio_Wormbase_Isoforms_merged_nodup.pep  #Only remove exact matches; Contains 35017 sequences
 
 
 
